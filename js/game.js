@@ -15,6 +15,7 @@ var clear = function () {
 };
 
 var howManyCircles = 10, circles = [];
+
 for (var i = 0; i < howManyCircles; ++i) {
   circles.push([Math.random() * width, Math.random() * height, Math.random() * 100, Math.random() / 2]);
 }
@@ -44,93 +45,97 @@ var moveCircles = function (deltaY) {
 
 
 var player = new (function () {
-  var that = this;
+  var thisPlayer = this;
 
-  that.image = new Image();
-  that.image.src = "img/image.png";
-  that.width = 65;
-  that.height = 95;
+  thisPlayer.image = new Image();
+  thisPlayer.image.src = "img/image.png";
+  thisPlayer.width = 65;
+  thisPlayer.height = 95;
 
-  that.X = 0;
-  that.Y = 0;
+  thisPlayer.X = 0;
+  thisPlayer.Y = 0;
 
-  that.frames = 1;
-  that.actualFrame = 0;
-  that.interval = 0;
+  thisPlayer.frames = 1;
+  thisPlayer.actualFrame = 0;
+  thisPlayer.interval = 0;
 
-  that.isJumping = false;
-  that.isFalling = false;
-  that.jumpSpeed = 0;
-  that.fallSpeed = 0;
+  thisPlayer.isJumping = false;
+  thisPlayer.isFalling = false;
+  thisPlayer.jumpSpeed = 0;
+  thisPlayer.fallSpeed = 0;
 
 
-  that.setPosition = function (x, y) {
-    that.X = x;
-    that.Y = y;
+  thisPlayer.setPosition = function (x, y) {
+    thisPlayer.X = x;
+    thisPlayer.Y = y;
   };
 
-  that.draw = function () {
+  thisPlayer.draw = function () {
 
     try {
-      ctx.drawImage(that.image, 0, that.height * that.actualFrame, that.width, that.height, that.X, that.Y, that.width, that.height);
+      ctx.drawImage(thisPlayer.image, 0, thisPlayer.height * thisPlayer.actualFrame, thisPlayer.width, thisPlayer.height, thisPlayer.X, thisPlayer.Y, thisPlayer.width, thisPlayer.height);
     } catch (e) {
     }
-    if (that.interval == 4) {
-      if (that.actualFrame == that.frames) {
-        that.actualFrame = 0;
+    if (thisPlayer.interval == 4) {
+      if (thisPlayer.actualFrame == thisPlayer.frames) {
+        thisPlayer.actualFrame = 0;
       } else {
-        that.actualFrame++;
+        thisPlayer.actualFrame++;
       }
-      that.interval = 0;
+      thisPlayer.interval = 0;
     }
-    that.interval++;
+    thisPlayer.interval++;
   };
 
-  that.jump = function () {
-    if (!that.isJumping && !that.isFalling) {
-      that.fallSpeed = 0;
-      that.isJumping = true;
-      that.jumpSpeed = 17;
+  thisPlayer.jump = function () {
+    if (!thisPlayer.isJumping && !thisPlayer.isFalling) {
+      thisPlayer.fallSpeed = 0;
+      thisPlayer.isJumping = true;
+      thisPlayer.jumpSpeed = 17;
     }
   };
 
-  that.checkJump = function () {
-    that.setPosition(that.X, that.Y - that.jumpSpeed);
+  thisPlayer.checkJump = function () {
+    thisPlayer.setPosition(thisPlayer.X, thisPlayer.Y - thisPlayer.jumpSpeed);
 //move object by number of pixels equal to current value of 'jumpSpeed'
-    that.jumpSpeed--;
-    if (that.jumpSpeed == 0) {
-      that.isJumping = false;
-      that.isFalling = true;
-      that.fallSpeed = 1;
+    thisPlayer.jumpSpeed--;
+    if (thisPlayer.jumpSpeed == 0) {
+      thisPlayer.isJumping = false;
+      thisPlayer.isFalling = true;
+      thisPlayer.fallSpeed = 1;
     }
 
   };
 
-  that.checkFall = function () {
-    if (that.Y < height - that.height) {
-      that.setPosition(that.X, that.Y + that.fallSpeed);
-      that.fallSpeed++;
+  thisPlayer.checkFall = function () {
+    if (thisPlayer.Y < height - thisPlayer.height) {
+      thisPlayer.setPosition(thisPlayer.X, thisPlayer.Y + thisPlayer.fallSpeed);
+      thisPlayer.fallSpeed++;
     } else {
-      that.fallStop();
+      thisPlayer.fallStop();
     }
   };
 
-  that.fallStop = function () {
-    that.isFalling = false;
-    that.fallSpeed = 0;
-    that.jump();
+  thisPlayer.fallStop = function () {
+    thisPlayer.isFalling = false;
+    thisPlayer.fallSpeed = 0;
+    thisPlayer.jump();
   };
 
-  that.moveLeft = function () {
-    if (that.X > 0) {
-      that.setPosition(that.X - 5, that.Y);
+  thisPlayer.moveLeft = function () {
+    if (thisPlayer.X > 0) {
+      thisPlayer.setPosition(thisPlayer.X - 10, thisPlayer.Y);
     }
   };
 
-  that.moveRight = function () {
-    if (that.X + that.width < width) {
-      that.setPosition(that.X + 5, that.Y);
+  thisPlayer.moveRight = function () {
+    if (thisPlayer.X + thisPlayer.width < width) {
+      thisPlayer.setPosition(thisPlayer.X + 10, thisPlayer.Y);
     }
+  };
+
+  thisPlayer.stoop = function () {
+    thisPlayer.setPosition(thisPlayer.X, height - thisPlayer.height);
   };
 
 })();
@@ -138,13 +143,14 @@ var player = new (function () {
 player.setPosition(~~((width - player.width) / 2), ~~((height - player.height) / 2));
 player.jump();
 
-document.onmousemove = function (e) {
-  if (player.X + c.offsetLeft > e.pageX) {
+document.onkeydown = function (e) {
+  if (e.which == '37')
     player.moveLeft();
-  } else if (player.X + c.offsetLeft < e.pageX) {
+  if (e.which == '39')
     player.moveRight();
-  }
-}
+  if (e.which == '40')
+    player.stoop();
+};
 
 var GameLoop = function () {
   clear();

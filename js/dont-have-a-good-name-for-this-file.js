@@ -1,4 +1,4 @@
-var width = 320, height = 500, gLoop;
+var width = 640, height = 800, gLoop;
 var universe = document.getElementById('universe');
 ctx = universe.getContext('2d');
 

@@ -8,10 +8,14 @@ document.onkeydown = function (e) {
     player.moveLeft();
   if (e.which == '39')
     player.moveRight();
-  if (e.which == '40')
+  if (e.which == '40') {
     player.stoop();
+  }
 };
 
+document.onkeyup = function (e) {
+  if(e.which == '40') player.jump();
+};
 
 var GameLoop = function () {
   clear();

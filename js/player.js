@@ -51,7 +51,6 @@ var Player = function () {
 
   thisPlayer.checkJump = function () {
     thisPlayer.setPosition(thisPlayer.X, thisPlayer.Y - thisPlayer.jumpSpeed);
-//move object by number of pixels equal to current value of 'jumpSpeed'
     thisPlayer.jumpSpeed--;
     if (thisPlayer.jumpSpeed == 0) {
       thisPlayer.isJumping = false;
@@ -67,13 +66,13 @@ var Player = function () {
       thisPlayer.fallSpeed++;
     } else {
       thisPlayer.fallStop();
+      thisPlayer.jump();
     }
   };
 
   thisPlayer.fallStop = function () {
-    thisPlayer.isFalling = false;
+    thisPlayer.isFalling = thisPlayer.isJumping = false;
     thisPlayer.fallSpeed = 0;
-    thisPlayer.jump();
   };
 
   thisPlayer.moveLeft = function () {
@@ -90,6 +89,7 @@ var Player = function () {
 
   thisPlayer.stoop = function () {
     thisPlayer.setPosition(thisPlayer.X, height - thisPlayer.height);
+    thisPlayer.fallStop();
   };
 
 };

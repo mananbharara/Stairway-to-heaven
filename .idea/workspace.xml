@@ -1,30 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" name="Default" comment="">
+    <list default="true" id="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" name="Default" comment="Refactoring platform factory and platforms">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/cloud-factory.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/dont-have-a-good-name-for-this-file.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/gameloop.js" afterPath="$PROJECT_DIR$/js/gameloop.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/platform-factory.js" afterPath="$PROJECT_DIR$/js/platform-factory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/platform.js" afterPath="$PROJECT_DIR$/js/platform.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/player.js" afterPath="$PROJECT_DIR$/js/player.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="StairwayToHeaven.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1369475371158" ignored="false" />
+    <file path="/index.html" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1369478988403" ignored="false" />
     <file path="/game.js" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1369300782323" ignored="false" />
     <file path="/a.html" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1368803108154" ignored="false" />
     <file path="/a.js" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1368803160745" ignored="false" />
     <file path="/README.md" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1368814121871" ignored="false" />
     <file path="/.gitignore" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1368814170491" ignored="false" />
-    <file path="/Dummy.txt" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1369476766329" ignored="false" />
+    <file path="/Dummy.txt" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1369479442402" ignored="false" />
     <file path="$PROJECT_DIR$/../AngularApp/index.html" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1368862476428" ignored="false" />
     <file path="$PROJECT_DIR$/../AngularApp/main.js" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1368862504692" ignored="false" />
     <file path="/platform.js" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1369477070335" ignored="false" />
-    <file path="/player.js" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1369332495488" ignored="false" />
-    <file path="/gameloop.js" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1369477603816" ignored="false" />
-    <file path="/dont-have-a-good-name-for-this-file.js" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1369478292829" ignored="false" />
+    <file path="/player.js" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1369478486701" ignored="false" />
+    <file path="/gameloop.js" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1369479612384" ignored="false" />
+    <file path="/dont-have-a-good-name-for-this-file.js" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1369478421435" ignored="false" />
     <file path="/PlatformFactory.js" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1369478189861" ignored="false" />
     <file path="/platform-factory.js" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1369477148348" ignored="false" />
     <file path="/fragment.js2" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1369477594340" ignored="false" />
+    <file path="/cloud-factory.js" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1369479318927" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,10 +47,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="dont-have-a-good-name-for-this-file.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/dont-have-a-good-name-for-this-file.js">
+      <file leaf-file-name="cloud-factory.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/cloud-factory.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="52" selection-start="796" selection-end="796" vertical-scroll-proportion="0.5717916">
+            <state line="36" column="4" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -65,7 +68,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="51" selection-start="560" selection-end="560" vertical-scroll-proportion="-15.625">
+            <state line="21" column="34" selection-start="357" selection-end="357" vertical-scroll-proportion="-13.125">
               <folding />
             </state>
           </provider>
@@ -83,16 +86,16 @@
       <file leaf-file-name="player.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/player.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="2" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0">
+            <state line="26" column="33" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gameloop.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="gameloop.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/gameloop.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="47" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0">
+            <state line="37" column="17" selection-start="925" selection-end="925" vertical-scroll-proportion="0.7052097">
               <folding />
             </state>
           </provider>
@@ -120,14 +123,15 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/js/game.js" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/js/player.js" />
         <option value="$PROJECT_DIR$/js/vendor/modernizr-2.6.2.min.js" />
         <option value="$PROJECT_DIR$/js/PlatformFactory.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/platform.js" />
-        <option value="$PROJECT_DIR$/js/gameloop.js" />
         <option value="$PROJECT_DIR$/js/platform-factory.js" />
+        <option value="$PROJECT_DIR$/js/player.js" />
         <option value="$PROJECT_DIR$/js/dont-have-a-good-name-for-this-file.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/cloud-factory.js" />
+        <option value="$PROJECT_DIR$/js/gameloop.js" />
       </list>
     </option>
   </component>
@@ -330,7 +334,11 @@
       <created>1369476771801</created>
       <updated>1369476771801</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Refactoring platform factory and platforms">
+      <created>1369478397016</created>
+      <updated>1369478397016</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -398,7 +406,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding platform factory to generate platforms. Drawing platforms" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring platform factory and platforms" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -420,6 +428,7 @@
     <MESSAGE value="Adding draw method to platform.js" />
     <MESSAGE value="Adding music controls." />
     <MESSAGE value="Adding platform factory to generate platforms. Drawing platforms" />
+    <MESSAGE value="Refactoring platform factory and platforms" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -427,11 +436,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/applications.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="252" column="71" selection-start="5477" selection-end="5477" vertical-scroll-proportion="0.5242967" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/vendor/modernizr-2.6.2.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="283" selection-start="940" selection-end="940" vertical-scroll-proportion="0.058517557" />
@@ -479,30 +483,9 @@
         <state line="978" column="0" selection-start="15517" selection-end="15517" vertical-scroll-proportion="0.33248082" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="51" selection-start="560" selection-end="560" vertical-scroll-proportion="-15.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/platform.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="42" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/player.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="2" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/gameloop.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="47" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -514,9 +497,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/dont-have-a-good-name-for-this-file.js">
+    <entry file="file://$PROJECT_DIR$/js/player.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="52" selection-start="796" selection-end="796" vertical-scroll-proportion="0.5717916">
+        <state line="26" column="33" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="34" selection-start="357" selection-end="357" vertical-scroll-proportion="-13.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/cloud-factory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="4" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gameloop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="17" selection-start="925" selection-end="925" vertical-scroll-proportion="0.7052097">
           <folding />
         </state>
       </provider>

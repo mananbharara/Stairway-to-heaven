@@ -24,7 +24,7 @@ var Player = function () {
     thisPlayer.Y = y;
   };
 
-  thisPlayer.draw = function () {
+  thisPlayer.draw = function (ctx) {
 
     try {
       ctx.drawImage(thisPlayer.image, 0, thisPlayer.height * thisPlayer.actualFrame, thisPlayer.width, thisPlayer.height,

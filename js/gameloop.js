@@ -4,6 +4,12 @@ ctx = universe.getContext('2d');
 
 universe.width = width;
 universe.height = height;
+universe.checkCollision = function (player) {
+  if (player.Y >= universe.height - player.height) {
+    player.fallStop();
+    player.jump();
+  }
+};
 
 var player = new Player();
 
@@ -27,11 +33,17 @@ var clear = function (ctx) {
 var GameLoop = function () {
   clear(ctx);
   CloudFactory.refreshClouds(ctx);
+  if (player.isJumping) player.checkJump();
+  if (player.isFalling) {
+    player.checkFall();
+    universe.checkCollision(player);
+  }
+
   platforms.forEach(function (platform) {
     platform.draw(ctx);
+    platform.checkCollision(player);
   });
-  if (player.isJumping) player.checkJump();
-  if (player.isFalling) player.checkFall();
+
   player.draw(ctx);
   gLoop = setTimeout(GameLoop, 1000 / 50);
 };

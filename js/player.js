@@ -50,25 +50,24 @@ var Player = function () {
     }
   };
 
+  thisPlayer.jumpStop = function () {
+    thisPlayer.isJumping = false;
+    thisPlayer.isFalling = true;
+    thisPlayer.fallSpeed = 1;
+  };
+
   thisPlayer.checkJump = function () {
     thisPlayer.setPosition(thisPlayer.X, thisPlayer.Y - thisPlayer.jumpSpeed);
     thisPlayer.jumpSpeed--;
     if (thisPlayer.jumpSpeed == 0) {
-      thisPlayer.isJumping = false;
-      thisPlayer.isFalling = true;
-      thisPlayer.fallSpeed = 1;
+      thisPlayer.jumpStop();
     }
 
   };
 
   thisPlayer.checkFall = function () {
-    if (thisPlayer.Y < height - thisPlayer.height) {
-      thisPlayer.setPosition(thisPlayer.X, thisPlayer.Y + thisPlayer.fallSpeed);
-      thisPlayer.fallSpeed++;
-    } else {
-      thisPlayer.fallStop();
-      thisPlayer.jump();
-    }
+    thisPlayer.setPosition(thisPlayer.X, thisPlayer.Y + thisPlayer.fallSpeed);
+    thisPlayer.fallSpeed++;
   };
 
   thisPlayer.fallStop = function () {
@@ -89,8 +88,7 @@ var Player = function () {
   };
 
   thisPlayer.stoop = function () {
-    thisPlayer.setPosition(thisPlayer.X, height - thisPlayer.height);
-    thisPlayer.fallStop();
+    if (thisPlayer.isJumping) thisPlayer.jumpStop();
   };
 
 

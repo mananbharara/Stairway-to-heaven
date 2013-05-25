@@ -43,5 +43,3 @@ var moveCircles = function (deltaY) {
     }
   }
 };
-
-

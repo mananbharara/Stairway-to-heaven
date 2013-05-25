@@ -27,7 +27,8 @@ var Player = function () {
   thisPlayer.draw = function () {
 
     try {
-      ctx.drawImage(thisPlayer.image, 0, thisPlayer.height * thisPlayer.actualFrame, thisPlayer.width, thisPlayer.height, thisPlayer.X, thisPlayer.Y, thisPlayer.width, thisPlayer.height);
+      ctx.drawImage(thisPlayer.image, 0, thisPlayer.height * thisPlayer.actualFrame, thisPlayer.width, thisPlayer.height,
+        thisPlayer.X, thisPlayer.Y, thisPlayer.width, thisPlayer.height);
     } catch (e) {
     }
     if (thisPlayer.interval == 4) {
@@ -91,6 +92,22 @@ var Player = function () {
     thisPlayer.setPosition(thisPlayer.X, height - thisPlayer.height);
     thisPlayer.fallStop();
   };
+
+
+  document.onkeydown = function (e) {
+    if (e.which == '37')
+      player.moveLeft();
+    if (e.which == '39')
+      player.moveRight();
+    if (e.which == '40') {
+      player.stoop();
+    }
+  };
+
+  document.onkeyup = function (e) {
+    if (e.which == '40') player.jump();
+  };
+
 
 };
 

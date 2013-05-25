@@ -1,4 +1,4 @@
-var Platform = function (x, y, type) {
+var Platform = function (x, y, platformWidth, platformHeight, type) {
   var thisPlatform = this;
 
   thisPlatform.firstColor = '#FF8C00';
@@ -24,18 +24,20 @@ var Platform = function (x, y, type) {
 
   thisPlatform.x = ~~x;
   thisPlatform.y = ~~y;
+  thisPlatform.width = platformWidth;
+  thisPlatform.height = platformHeight;
   thisPlatform.type = type;
 
-  thisPlatform.draw = function (ctx, platformWidth, platformHeight) {
+  thisPlatform.draw = function (ctx) {
     ctx.fillStyle = 'rgba(255, 255, 255, 1)';
 
-    var gradient = ctx.createRadialGradient(thisPlatform.x + (platformWidth/2), thisPlatform.y + (platformHeight/2), 5,
-      thisPlatform.x + (platformWidth/2), thisPlatform.y + (platformHeight/2), 45);
+    var gradient = ctx.createRadialGradient(thisPlatform.x + (thisPlatform.width/2), thisPlatform.y + (thisPlatform.height/2), 5,
+      thisPlatform.x + (thisPlatform.width/2), thisPlatform.y + (thisPlatform.height/2), 45);
     gradient.addColorStop(0, thisPlatform.firstColor);
     gradient.addColorStop(1, thisPlatform.secondColor);
 
     ctx.fillStyle = gradient;
-    ctx.fillRect(thisPlatform.x, thisPlatform.y, platformWidth, platformHeight);
+    ctx.fillRect(thisPlatform.x, thisPlatform.y, thisPlatform.width, thisPlatform.height);
   };
 
 };

@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" name="Default" comment="Making the fall smooth. Adding platform.js for platforms">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/platform.js" afterPath="$PROJECT_DIR$/js/platform.js" />
+    <list default="true" id="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/PlatformFactory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="StairwayToHeaven.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1369329789246" ignored="false" />
+    <file path="/index.html" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1369470486584" ignored="false" />
     <file path="/game.js" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1369300782323" ignored="false" />
     <file path="/a.html" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1368803108154" ignored="false" />
     <file path="/a.js" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1368803160745" ignored="false" />
     <file path="/README.md" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1368814121871" ignored="false" />
     <file path="/.gitignore" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1368814170491" ignored="false" />
-    <file path="/Dummy.txt" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1369470021590" ignored="false" />
+    <file path="/Dummy.txt" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1369470154041" ignored="false" />
     <file path="$PROJECT_DIR$/../AngularApp/index.html" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1368862476428" ignored="false" />
     <file path="$PROJECT_DIR$/../AngularApp/main.js" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1368862504692" ignored="false" />
     <file path="/platform.js" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1369467542749" ignored="false" />
     <file path="/player.js" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1369332495488" ignored="false" />
     <file path="/gameloop.js" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1369467659022" ignored="false" />
     <file path="/dont-have-a-good-name-for-this-file.js" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1369332795567" ignored="false" />
+    <file path="/PlatformFactory.js" changelist="8c6dd55e-8187-4fb2-ab1e-0a41ac5ba7db" time="1369470671642" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,16 +44,34 @@
       <file leaf-file-name="dont-have-a-good-name-for-this-file.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/dont-have-a-good-name-for-this-file.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0">
+            <state line="16" column="8" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="platform.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="PlatformFactory.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/PlatformFactory.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="57" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0952986">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="17" selection-start="542" selection-end="542" vertical-scroll-proportion="-16.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="platform.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/platform.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="77" selection-start="559" selection-end="559" vertical-scroll-proportion="0.5179028">
+            <state line="34" column="3" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -69,7 +89,7 @@
       <file leaf-file-name="gameloop.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/gameloop.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="29" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0">
+            <state line="14" column="29" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -96,20 +116,21 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/js/game.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/js/player.js" />
         <option value="$PROJECT_DIR$/js/vendor/modernizr-2.6.2.min.js" />
         <option value="$PROJECT_DIR$/js/dont-have-a-good-name-for-this-file.js" />
-        <option value="$PROJECT_DIR$/js/platform.js" />
         <option value="$PROJECT_DIR$/js/gameloop.js" />
+        <option value="$PROJECT_DIR$/js/platform.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/PlatformFactory.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1680" />
-    <option name="height" value="928" />
+    <option name="height" value="933" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -159,6 +180,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -187,13 +209,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="sound" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StairwayToHeaven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StairwayToHeaven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -201,9 +236,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -279,14 +314,17 @@
       <created>1369470026188</created>
       <updated>1369470026188</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adding draw method to platform.js">
+      <created>1369470053691</created>
+      <updated>1369470053691</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1680" height="928" extended-state="6" />
+    <frame x="0" y="22" width="1680" height="933" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962963" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -300,6 +338,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962963" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962963" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -347,7 +386,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moving key press and release events to player.js." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding draw method to platform.js" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -366,6 +405,7 @@
     <MESSAGE value="Making the fall smooth" />
     <MESSAGE value="Making the fall smooth. Adding platform.js for platforms" />
     <MESSAGE value="Moving key press and release events to player.js." />
+    <MESSAGE value="Adding draw method to platform.js" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -373,11 +413,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="13" selection-start="14" selection-end="14" vertical-scroll-proportion="0.01898734" />
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/applications.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state line="252" column="71" selection-start="5477" selection-end="5477" vertical-scroll-proportion="0.5242967" />
@@ -405,13 +440,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="12" selection-start="359" selection-end="359" vertical-scroll-proportion="-11.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/humans.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="47" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0" />
@@ -437,13 +465,6 @@
         <state line="978" column="0" selection-start="15517" selection-end="15517" vertical-scroll-proportion="0.33248082" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/dont-have-a-good-name-for-this-file.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/player.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="13" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0">
@@ -451,16 +472,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/gameloop.js">
+    <entry file="file://$PROJECT_DIR$/js/platform.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="29" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0">
+        <state line="34" column="3" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/platform.js">
+    <entry file="file://$PROJECT_DIR$/js/gameloop.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="77" selection-start="559" selection-end="559" vertical-scroll-proportion="0.5179028">
+        <state line="14" column="29" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="17" selection-start="542" selection-end="542" vertical-scroll-proportion="-16.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/dont-have-a-good-name-for-this-file.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="8" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/PlatformFactory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="57" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0952986">
           <folding />
         </state>
       </provider>

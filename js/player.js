@@ -95,6 +95,8 @@ var Player = function () {
   document.onkeydown = function (e) {
     if (e.which == '37')
       player.moveLeft();
+//    if(e.which == '38')
+//      player.fallStop();
     if (e.which == '39')
       player.moveRight();
     if (e.which == '40') {
@@ -104,6 +106,7 @@ var Player = function () {
 
   document.onkeyup = function (e) {
     if (e.which == '40') player.jump();
+//    if (e.which == '38') player.jump();
   };
 
 

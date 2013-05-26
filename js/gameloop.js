@@ -16,7 +16,7 @@ var player = new Player();
 player.setPosition(~~((width - player.width) / 2), ~~((height - player.height) / 2));
 player.jump();
 
-var platformHeight = 20;
+var platformHeight = 10;
 var platformWidth = 70;
 var platforms = PlatformFactory.generatePlatforms(7, platformWidth, platformHeight);
 
@@ -45,7 +45,7 @@ var GameLoop = function () {
   });
 
   player.draw(ctx);
-  gLoop = setTimeout(GameLoop, 1000 / 50);
+  gLoop = setTimeout(GameLoop, 800 / 50);
 };
 
 GameLoop();

@@ -15,8 +15,11 @@ var Player = function () {
 
   thisPlayer.isJumping = false;
   thisPlayer.isFalling = false;
+  thisPlayer.isMovingLeft = false;
+  thisPlayer.isMovingRight = false;
   thisPlayer.jumpSpeed = 0;
   thisPlayer.fallSpeed = 0;
+  thisPlayer.horizontalSpeed = 7;
 
 
   thisPlayer.setPosition = function (x, y) {
@@ -24,7 +27,14 @@ var Player = function () {
     thisPlayer.Y = y;
   };
 
+  function setNewPosition() {
+    if (thisPlayer.isMovingLeft && thisPlayer.X > 0) thisPlayer.X -= thisPlayer.horizontalSpeed;
+    if (thisPlayer.isMovingRight && ((thisPlayer.X + thisPlayer.width) < width)) thisPlayer.X += thisPlayer.horizontalSpeed;
+  }
+
   thisPlayer.draw = function (ctx) {
+
+    setNewPosition();
 
     try {
       ctx.drawImage(thisPlayer.image, 0, thisPlayer.height * thisPlayer.actualFrame, thisPlayer.width, thisPlayer.height,
@@ -76,15 +86,13 @@ var Player = function () {
   };
 
   thisPlayer.moveLeft = function () {
-    if (thisPlayer.X > 0) {
-      thisPlayer.setPosition(thisPlayer.X - 10, thisPlayer.Y);
-    }
+    thisPlayer.isMovingRight = false;
+    thisPlayer.isMovingLeft = true;
   };
 
   thisPlayer.moveRight = function () {
-    if (thisPlayer.X + thisPlayer.width < width) {
-      thisPlayer.setPosition(thisPlayer.X + 10, thisPlayer.Y);
-    }
+    thisPlayer.isMovingLeft = false;
+    thisPlayer.isMovingRight = true;
   };
 
   thisPlayer.stoop = function () {
@@ -95,7 +103,7 @@ var Player = function () {
   document.onkeydown = function (e) {
     if (e.which == '37')
       player.moveLeft();
-    if(e.which == '38')
+    if (e.which == '38')
       player.fallStop();
     if (e.which == '39')
       player.moveRight();
@@ -105,8 +113,10 @@ var Player = function () {
   };
 
   document.onkeyup = function (e) {
-    if (e.which == '40') player.jump();
+//    if (e.which == '40') player.jump();
     if (e.which == '38') player.jump();
+    if (e.which == '37') player.isMovingLeft = false;
+    if (e.which == '39') player.isMovingRight = false;
   };
 
 

@@ -16,7 +16,7 @@ var player = new Player();
 player.setPosition(~~((width - player.width) / 2), ~~((height - player.height) / 2));
 player.jump();
 
-var platformHeight = 10;
+var platformHeight = 15;
 var platformWidth = 70;
 var platforms = PlatformFactory.generatePlatforms(7, platformWidth, platformHeight);
 

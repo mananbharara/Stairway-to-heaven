@@ -43,7 +43,7 @@ var Platform = function (x, y, platformWidth, platformHeight, type) {
   thisPlatform.checkCollision = function (player) {
     if (
       (player.isFalling) && (player.X < thisPlatform.x + thisPlatform.width) && (player.X + player.width > thisPlatform.x)
-        && (player.Y + player.height > thisPlatform.y) && (player.Y + player.height < thisPlatform.y + thisPlatform.height)
+        && (player.Y + player.height > thisPlatform.y-10 ) && (player.Y + player.height < thisPlatform.y + thisPlatform.height)
       ) {
       thisPlatform.onCollide(player);
     }
